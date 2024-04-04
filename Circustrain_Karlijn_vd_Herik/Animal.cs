@@ -1,6 +1,6 @@
 ﻿using Circustrain_Karlijn_vd_Herik;
 
-internal class Animal
+public class Animal
 {
     public string Name { get; private set; }
     public AnimalSize Size { get; private set; }
@@ -29,7 +29,7 @@ internal class Animal
             if (newAnimal.EatsMeat)
             {
                 // Als het andere dier ook vlees eet en van dezelfde grootte is, is het niet vriendelijk
-                if (this.EatsMeat && newAnimal.Size == this.Size)
+                if (this.EatsMeat && newAnimal.Size <= this.Size)
                 {
                     return false;
                 }

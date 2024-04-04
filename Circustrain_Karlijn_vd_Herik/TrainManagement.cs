@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Circustrain_Karlijn_vd_Herik
 {
-    internal class TrainManagement
+    public class TrainManagement
     {
         private List<Wagon> wagons;
+        public IReadOnlyList<Wagon> Wagons => wagons;
 
         public TrainManagement()
         {

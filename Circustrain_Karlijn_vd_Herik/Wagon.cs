@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Circustrain_Karlijn_vd_Herik
 {
-    internal class Wagon
+    public class Wagon
     {
         private int TotalCapacity = 10;
 
