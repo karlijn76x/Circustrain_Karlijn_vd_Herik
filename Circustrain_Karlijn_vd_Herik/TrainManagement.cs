@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Circustrain_Karlijn_vd_Herik
 {
@@ -15,7 +13,6 @@ namespace Circustrain_Karlijn_vd_Herik
         {
             wagons = new List<Wagon>();
         }
-
         public void AddAnimalsToTrain(List<Animal> animals)
         {
             animals = animals.OrderByDescending(a => a.Size)
@@ -27,7 +24,6 @@ namespace Circustrain_Karlijn_vd_Herik
                 bool added = false;
                 foreach (Wagon wagon in wagons)
                 {
-
                     if (wagon.TryAddAnimal(animal))
                     {
                         added = true;
@@ -43,7 +39,6 @@ namespace Circustrain_Karlijn_vd_Herik
                 }
             }
         }
-
         public void DisplayTrain()
         {
             int wagonNumber = 1;
