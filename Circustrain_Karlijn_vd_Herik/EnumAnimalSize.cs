@@ -11,6 +11,5 @@ namespace Circustrain_Karlijn_vd_Herik
             Small = 1,
             Medium = 3,
             Large = 5,
-        }
-    
+        }   
 }
